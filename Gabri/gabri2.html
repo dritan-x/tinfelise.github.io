@@ -98,16 +98,14 @@
      * Always call this function after finishing adding rows to #dataRows to apply transition effects.
      */
     function applyEffects(){
-        jQuery(function($){
-            $('.input input').focus(function(){
-                $(this).parent().addClass('filled')
-            })
-            $('.input input').blur(function() {
-                if( !$(this).val() ) {
-                    $(this).parent().removeClass('filled')
-                }
-            });
+        $('.input input').focus(function(){
+            $(this).parent().addClass('filled')
         })
+        $('.input input').blur(function() {
+            if( !$(this).val() ) {
+                $(this).parent().removeClass('filled')
+            }
+        });
     }
 
     const VARIANT_ROW_NAMES = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];

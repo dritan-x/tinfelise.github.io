@@ -48,14 +48,21 @@
       <file leaf-file-name="gabri2.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gabri2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="508">
+              <caret line="108" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="161" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/gabri2.html" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -139,12 +146,12 @@
       <option name="presentableId" value="Default" />
       <updated>1484993838567</updated>
       <workItem from="1484993839684" duration="616000" />
-      <workItem from="1485134612741" duration="1453000" />
+      <workItem from="1485134612741" duration="1745000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2069000" />
+    <option name="totallyTimeSpent" value="2361000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-389" width="1920" height="1173" extended-state="6" />
@@ -204,8 +211,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gabri2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="508">
+          <caret line="108" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="161" selection-end-column="7" />
           <folding />
         </state>
       </provider>
