@@ -42,7 +42,7 @@
 
             <div class='options formSection clearfix'>
                 <input class='variations' type="number" name="version-count" value="2" onChange="adjust_table_size()" disabled="disabled"/>
-                <a id='addVariation' onClick="addVariation()">+ Add Variation</a>
+                <a id='addVariation' onClick="addVariationRow()">+ Add Variation</a>
                 <div class='yates'>
                     <input type="checkbox" id="is-yates" checked> <label for='is-yates'>Yates' Continuity Correction</label>
                 </div>
@@ -110,15 +110,16 @@
 
     const VARIANT_ROW_NAMES = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
     const INITIAL_ROWS = 5; //initial rows
+    const elementRows = []; //will contain the full div representing the row
 
     var currentRowCount = INITIAL_ROWS;
-
     const dataRows = document.getElementById('dataRows');
+
     for (var i = 0; i<INITIAL_ROWS; i ++){
-        addVariation();
+        addVariationRow();
     }
 
-
+    const _this = this;
     function generateVariationRow(variationNumber){
         const mainDiv = generateDiv('test');
         const cssDiv = generateDiv('variationInput');
@@ -126,6 +127,10 @@
 
         const variationDiv = generateDiv('variation');
         const span = generateSpan(VARIANT_ROW_NAMES[variationNumber]);
+        variationDiv.onclick = function (){
+            removeVariationRow(variationNumber);
+        }
+
         variationDiv.appendChild(span);
         mainDiv.appendChild(variationDiv);
 
@@ -150,12 +155,17 @@
         return mainDiv;
     }
 
-    function addVariation(){
-        const row = generateVariationRow(currentRowCount++);
+    function addVariationRow(){
+        const row = generateVariationRow(elementRows.length);
         dataRows.appendChild(row);
         applyEffects();
+        elementRows.push(row);
     }
 
+    function removeVariationRow(variationNumber){
+        const row = elementRows[variationNumber];
+        dataRows.removeChild(row);
+    }
 
 </script>
 </body>
